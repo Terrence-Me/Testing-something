@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Codex Can Do for You</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1020;
+      --card: #121a33;
+      --text: #e8eeff;
+      --muted: #a8b3d9;
+      --accent: #6ea8fe;
+      --accent-2: #8ef0c5;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top, #1a2550 0%, var(--bg) 50%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: linear-gradient(165deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 18px;
+      backdrop-filter: blur(4px);
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+      color: var(--accent);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-note {
+      margin-top: 32px;
+      text-align: center;
+      color: var(--accent-2);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Hi, I’m Codex 👋</h1>
+      <p class="subtitle">
+        I can help you move from idea to working result quickly—from coding and debugging to writing,
+        research, and day-to-day task automation.
+      </p>
+    </section>
+
+    <section class="grid" aria-label="Codex capabilities">
+      <article class="card">
+        <h2>Build & Refactor Code</h2>
+        <p>Create features, clean up legacy code, and improve structure while following project conventions.</p>
+      </article>
+
+      <article class="card">
+        <h2>Debug Faster</h2>
+        <p>Trace errors, explain root causes, and suggest targeted fixes with clear, actionable steps.</p>
+      </article>
+
+      <article class="card">
+        <h2>Write Tests</h2>
+        <p>Add unit/integration tests and run checks so changes are safer and easier to maintain.</p>
+      </article>
+
+      <article class="card">
+        <h2>Document Clearly</h2>
+        <p>Produce docs, READMEs, summaries, and PR descriptions that are concise and useful.</p>
+      </article>
+
+      <article class="card">
+        <h2>Research & Summarize</h2>
+        <p>Gather information, compare options, and provide quick summaries to support decisions.</p>
+      </article>
+
+      <article class="card">
+        <h2>Automate Workflows</h2>
+        <p>Script repetitive tasks, wire tools together, and speed up local development loops.</p>
+      </article>
+    </section>
+
+    <p class="footer-note">Tell me your goal, constraints, and tech stack—I’ll propose the fastest path.</p>
+  </main>
+</body>
+</html>
